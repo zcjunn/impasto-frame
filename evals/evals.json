@@ -1,0 +1,135 @@
+{
+  "skill": "impasto-frame-skill",
+  "purpose": "Effect and regression cases for authored painterly composition, identity-preserving focal beauty, salient-prop reconstruction, layered colour and subject light, plus restrained relationship-driven tactile depth.",
+  "cases": [
+    {
+      "id": "portrait-strong-stylization-not-filter",
+      "request": "把这张人物照片转成原创绘画动画画面。保留人物身份、动作和红伞，但要用大面积色块、分面笔触和明显材质差异，不能只是照片叠加绘画滤镜。",
+      "input_contract": "One environmental portrait with a declared identity, pose, and colour anchor.",
+      "expected_route": "Edit Target",
+      "expected_behavior": [
+        "Preserve the declared identity, action, subject count, and red umbrella anchor.",
+        "Make one thumbnail-visible macro departure plus one supporting move before adding texture.",
+        "Reconstruct the subject with readable planes and use different mark grammars for skin, hair, fabric, vegetation, metal, and sky where present.",
+        "Fail any result whose source photo remains intact beneath one global paint texture or uniform grade."
+      ]
+    },
+    {
+      "id": "high-key-snow-environment-abstraction",
+      "request": "把这张明亮雪山与河流照片变成更抽象的绘画画面。保留山、森林、河流的空间关系，但可以合并树木和雪石，不要压成暗夜。",
+      "input_contract": "One high-key winter landscape without a human focal anchor.",
+      "expected_route": "Edit Target with Environment Abstraction",
+      "expected_behavior": [
+        "Keep a high- or mid-key exposure independently from abstraction strength.",
+        "Preserve the mountain/forest/river topology while compressing repeated trees and stones into a small set of rhythm groups.",
+        "Choose one hero form and one counterform or current, expressed through five to nine macro masses.",
+        "Lower non-focal microcontrast and edge density without turning the background into neutral blur."
+      ]
+    },
+    {
+      "id": "aerial-wave-shape-and-colour-authorship",
+      "request": "把这张俯拍海浪做成强烈、抽象但仍能认出浪向的绘画画面。可以夸张主浪和泡沫形状，请对青绿、白色、岩石色的面积与平衡负责。",
+      "input_contract": "One aerial ocean photograph with a dominant wave direction.",
+      "expected_route": "Edit Target with Environment Abstraction",
+      "expected_behavior": [
+        "Preserve the dominant flow and essential coastline or rock adjacency.",
+        "Enlarge or simplify the hero wave at thumbnail scale instead of tracing all foam detail.",
+        "Assign spatial ownership to the dominant field, structural counter, focal accent, and neutral bridge.",
+        "Use directional water marks, broken foam edges, and distinct rock planes rather than one shared texture."
+      ]
+    },
+    {
+      "id": "balanced-source-faithful-restaging",
+      "request": "保留人物、山峰、地平线和左右位置，不要把原图改到无关；但可以适度放大山体、重做光形和降低非主体对比度，让画面更有绘画动画感。",
+      "input_contract": "One environmental portrait with protected composition anchors.",
+      "expected_route": "Edit Target",
+      "expected_behavior": [
+        "Treat subject position, landmark position, horizon, depth order, and left-right relationships as protected anchors.",
+        "Use anchored enlargement or local overlap changes without relocating the subject or landmark.",
+        "Give the focal event two or three attention advantages while keeping context chromatic, unified, and quieter.",
+        "Do not confuse source faithfulness with preserving photographic microdetail or contrast distribution."
+      ]
+    },
+    {
+      "id": "prompt-only-no-false-generation-claim",
+      "request": "只给我一段可执行提示词：一个人在雨后的高架桥下，做成大色面、分面结构和材质笔触明显的原创绘画画面。不要生成。",
+      "expected_route": "Prompt-only",
+      "expected_behavior": [
+        "Return one priority-ordered executable prompt with canvas anchors, macro masses, value groups, colour roles, contrast tiers, material grammars, and anti-filter conditions.",
+        "Do not call an image tool or claim that an image was generated, inspected, or passed quality review."
+      ]
+    },
+    {
+      "id": "review-global-filter-regression",
+      "request": "检查这张重制图：构图几乎没变，原照片明暗还在，只是人物、草地、天空和衣服都叠了一层相同油画纹理。它合格吗？",
+      "input_contract": "One generated remake that retains photographic underpainting with uniform texture.",
+      "expected_route": "Finished-frame review",
+      "expected_behavior": [
+        "Fail the anti-filter gate even if the close-up brush texture is attractive.",
+        "Identify missing macro-shape departure, insufficient contrast ownership, and identical cross-material marks.",
+        "Recommend one targeted correction that rebuilds large shapes and material differences rather than adding more texture or darkness."
+      ]
+    },
+    {
+      "id": "light-depth-supports-overlap-not-mosaic",
+      "request": "把这张人物与环境照片做成原创建绘画画面，沿用大色块、分面、重新构图和重新配色；只在前后遮挡、衣褶转折、主体道具与前景穿插处增加轻微油画立体感，不能整张图都像厚颜料拼起来。",
+      "input_contract": "One photo with a focal subject, articulated prop or garment, and foreground/background relationships.",
+      "expected_route": "Edit Target with Light Tactile Depth",
+      "expected_behavior": [
+        "Use the baseline directorial, colour, shape and material system before any surface height.",
+        "Name a small set of spatial depth carriers such as overlaps, contacts, form turns, directional crests or foreground separators.",
+        "Keep sky, atmosphere, skin, distant fields and other continuous passages broad, connected and mostly low-relief.",
+        "Reject equal-size palette-knife patches, puzzle-piece tessellation, full-frame embossing and relief that competes with the focal read."
+      ]
+    },
+    {
+      "id": "review-mosaic-impasto-regression",
+      "request": "检查这张重制图：天空、雪地、衣服和皮肤都被相似大小的凸起颜料块切开，看起来像马赛克或拼图。虽然很有3D质感，但这种立体感合格吗？",
+      "input_contract": "One generated painterly remake with all-over raised patchwork.",
+      "expected_route": "Finished-frame review",
+      "expected_behavior": [
+        "Fail the light-depth ownership and continuity gates.",
+        "Explain that paint height is replacing rather than reinforcing overlap, form, contact and spatial depth.",
+        "Preserve the composition and colour system, flatten continuous fields, and retain only mild body on named depth carriers.",
+        "Do not recommend more texture, stronger bump, more gloss or smaller repeated tiles."
+      ]
+    },
+    {
+      "id": "portrait-prop-beauty-and-redesign",
+      "request": "把这张人物撑波点伞的照片做成强风格绘画画面。人物要认得出来但五官必须更好看、更有神；伞仍然是原来的主色和图案类型，但不要逐片逐点照抄。构图、主体照明和色彩由你主动判断。",
+      "input_contract": "One environmental portrait with a recognizable person and a salient patterned prop.",
+      "expected_route": "Edit Target with Aesthetic Direction",
+      "expected_behavior": [
+        "Separate the person's visible identity signature and the prop's semantic anchors from authored design anchors.",
+        "Choose one structural primary macro departure with an aesthetic payoff and one supporting move visible at 128–256 px.",
+        "Preserve identity and expression direction while rebuilding connected facial planes, head/neck attachment, controlled eye/mouth edges and flattering motivated light without generic beautification.",
+        "Preserve prop category, owner/contact, dominant colour and motif family while redesigning silhouette rhythm, panels, repeat grouping, material, highlights and overlap.",
+        "Separate local colour, primary illumination, limited environment influence and a restrained final grade."
+      ]
+    },
+    {
+      "id": "review-recognizable-face-literal-prop",
+      "request": "检查这张结果：人物还能认出来，但脸比原图难看，脖子和下颌连接别扭；伞的每个分片和圆点几乎都照搬，只增加了油画纹理。它合格吗？",
+      "input_contract": "One generated remake with identity retention but degraded facial aesthetics and literal prop tracing.",
+      "expected_route": "Finished-frame review with Aesthetic Direction",
+      "expected_behavior": [
+        "Fail identity-plus-beauty and prop-reconstruction gates even if likeness and texture are acceptable.",
+        "Preserve the identity signature and rebuild only facial connections, expression planes, edge hierarchy and subject light.",
+        "Preserve prop semantics and essential motif while redesigning panels, repeat rhythm, highlights, material and overlap rather than adding more texture.",
+        "Keep successful composition and colour modules unchanged during the targeted correction."
+      ]
+    },
+    {
+      "id": "review-dirty-global-grade-and-weak-axes",
+      "request": "这张图近看有很多笔触，也写了放大主体、加强云和加浓颜色，但缩小后还是原照片；天空、草地、皮肤和道具都很艳，整体有点脏，背景还像盖了灰雾。请判断问题。",
+      "input_contract": "One generated remake with several nominal exaggeration axes, no thumbnail-visible departure, global saturation and gray-fog context.",
+      "expected_route": "Finished-frame review",
+      "expected_behavior": [
+        "Fail the macro-departure gate because several minor axes do not replace one decisive structural primary change.",
+        "Fail layered colour and chromatic-context gates because local colour, illumination and grade collapse into global saturation and gray fog.",
+        "Choose one structural primary departure with an aesthetic payoff, then one supporting move.",
+        "Restore source-informed local colours, a neutral bridge, subject/background illumination separation and a restrained final grade while retaining colored material depth in context."
+      ]
+    }
+  ]
+}

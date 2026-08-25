@@ -1,0 +1,4 @@
+interface:
+  display_name: "Impasto Frame Skill"
+  short_description: "Authored painterly frames with focal beauty"
+  default_prompt: "Use $impasto-frame-skill to rebuild the supplied image as an authored painterly frame with a thumbnail-visible directorial change, identity-preserving focal beauty, redesigned salient props, scene-owned colour and subject light, plus restrained relationship-driven paint depth without mosaic relief."
