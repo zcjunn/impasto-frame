@@ -18,13 +18,16 @@ The result fails immediately if any is true:
 - non-focal quieting is achieved mainly with uniform gray fog, global desaturation, lifted blacks, or blur that erases spatial/material information;
 - color is supplied mainly by a global LUT/gradient map or a forced warm-cool/complementary cliché with no spatial, material, light, identity, or attention ownership;
 - local colour, primary illumination, environment influence, and final grade collapse into one global cast; skin, prop, cloth, vegetation, sky, or other major owners become simultaneously over-saturated, dirty, or materially indistinct;
-- a focal face remains recognizable but is visibly less coherent, expressive, or aesthetically resolved than the source because identity ratios, expression, head/neck attachment, connected planes, edge control, or subject light drifted without narrative purpose;
+- any visible human Edit Target changes facial landmarks/ratios, gaze, expression, head-neck attachment, body proportions, exact pose, limb count/length/joints, hands, fingers, feet, shoe direction, clothing silhouette, or person-prop/ground contacts;
+- a visible person is geometrically recognizable but stylistically separate from the frame—photographic or cutout-like shading, unmatched edge language, different light direction/shadow family, incompatible paint abstraction, missing contact integration, or a separate final grade;
+- a focal face remains recognizable but is visibly less coherent or aesthetically resolved than the source because generation artifacts, paint edges, subject light, or source geometry drifted;
 - a salient prop is preserved as an almost literal trace of incidental panels, pattern repeats, folds, highlights, or contour accidents, so its only meaningful change is painterly texture;
 - three or more important materials use the same repeated mark scale and edge behavior;
 - tactile depth, when requested, appears as full-frame embossing, repeated equal-size knife patches, puzzle-piece tessellation, cracked-plaster texture, or a mosaic that fragments continuous surfaces and competes with the composition;
 - the exposure was forced darker or brighter against the selected scene-owned exposure key without narrative purpose;
 - requested ratio/count/file contract is materially wrong;
 - the output violates a required portable-render invariant: declared anchors/topology, macro-mass relationship, colour-role ownership, contrast tiers, focal plane reconstruction, material divergence, or anti-filter condition.
+- prompt compliance is asserted while the finished frame still fails at thumbnail, mid, or close scale; written intent never overrides visible evidence.
 
 ## Style-recognition Gate
 
@@ -37,13 +40,14 @@ Before scoring polish, answer each applicable item yes/no. Every applicable item
 5. **Focal resolution:** when character-level style is requested, the face/gesture is large enough to inspect. Otherwise restage/crop, choose environment-emphasis explicitly, or disclose the limitation before passing.
 6. **Macro departure (Style-first/Expressive/Radical):** source and result differ at thumbnail scale in at least one major area, contour, overlap, focal scale, negative-space, light topology, perspective/depth interval, or color-zone relationship; the declared primary move improves hierarchy while preserving declared anchors.
 7. **Environment transfiguration (when applicable):** an environment-emphasis Style-first frame has a legible hero form and counterform/current, compresses repeated detail, and uses one primary macro departure plus one supporting move while preserving declared anchors.
-8. **Contrast ownership:** focal, support, and context tiers are visibly different across selected value/edge/chroma/hue-noise/texture/FX dimensions; context remains colored, spatial, and materially legible.
+8. **Six-dimension contrast ownership:** the explicit local-contrast, microcontrast, edge-density, chroma, hue-noise and texture-frequency budgets visibly distinguish focal, support and context tiers; context remains colored, spatial, and materially legible.
 9. **Color authorship:** the output visibly reflects a justified Preserve-and-refine, Rebalance, or Re-script decision; one primary contrast logic and role/ownership map support the focal path while protected colors remain intact. Any color collision has owners, adjacency, a dominant side, and a function. No specific warm-cool relationship is required.
 10. **Portable contract conformance:** the result satisfies the same observable anchor, macro-map, value/colour-role, contrast-tier, plane, material, edge, and anti-filter decisions that another model would be judged against. Exact brush stamps and pixels are not part of this gate.
 11. **Light-depth ownership (when requested):** mild body appears only on spatially meaningful overlaps, contacts, form turns, crests or foreground separators; continuous and distant fields remain coherent, mostly low-relief, and free of mosaic tessellation.
-12. **Identity-plus-beauty (when applicable):** the focal person retains the visible identity signature and is at least as coherent, expressive, and aesthetically resolved as the source without becoming a generic beauty template.
+12. **Human geometry plus beauty (when applicable):** the focal person retains all source-visible facial/body geometry, exact pose, limbs, hands, feet, clothing silhouette and contacts; aesthetic improvement comes only from coherent light, colour, edge and paint treatment inside that lock.
 13. **Prop reconstruction (when applicable):** the prop retains category, owner/contact, functional state, dominant colour and essential motif, but its silhouette rhythm, panels, repeat grouping, material and overlap are visibly redesigned rather than traced.
 14. **Subject light and layered grade:** one motivated key reveals useful focal planes, the shadow side remains separated, any bounce/reflection is limited, the background supports the subject, and the final grade does not overwrite local colour or material identity.
+15. **Human style integration (when applicable):** person and environment share one light field, color logic, abstraction family, edge hierarchy, material world, contact treatment and final grade; neither pasted preservation nor geometry-changing integration passes.
 
 ## Ten Checks
 
@@ -85,6 +89,8 @@ Pass only when the style-recognition gate passes, there is no critical failure, 
 - In Expressive/Radical work, is the primary macro departure visible without breaking the preserved anchors, and does the supporting move reinforce rather than distract?
 - Do adjacent subject/environment/material masses separate through the chosen primary contrast without maximizing every color axis?
 - If a color collision exists, are both owners, their boundary/transition, the dominant side, and the attention/depth function legible?
+- For a visible person, do body proportions, pose silhouette, every limb/joint and person-prop/ground contact match the source while the environment restaging remains purposeful?
+- Does the person share the same light direction, shadow family, edge hierarchy, paint abstraction and contact treatment as the rest of the frame?
 
 ### Close-scale
 
@@ -94,7 +100,8 @@ Pass only when the style-recognition gate passes, there is no critical failure, 
 - Are edges mixed rather than uniformly sharp/soft?
 - Are particles, scratches, and glow materially motivated?
 - Do local colors remain believable under the light, and do materials avoid sharing one universal shadow/highlight hue?
-- Does the focal face retain its identity signature, expression and attractive plane/light organization without generic beautification or coarse skin marks?
+- Does the focal face retain the source facial landmarks, ratios, gaze, expression, head-neck geometry and asymmetries without generic beautification or coarse skin marks?
+- Are hands/fingers, feet/shoe direction, garment openings and every visible joint anatomically and relationally unchanged from the source?
 - If the final grade is mentally removed, do local colour, subject light, material separation and hierarchy still work?
 - If tactile depth is present, can every conspicuous raised mark be explained by a spatial relationship, and do large continuous forms remain unbroken?
 
@@ -116,16 +123,18 @@ Make at most one automatic retry. Change only the failed module.
 | Muddy or overcomplicated palette | Reduce competing mid-saturation hue families, restore a neutral bridge, and separate important masses through one primary axis |
 | Color/light/material contradiction | Restore protected local color, state the motivated light color and direction, and let illumination influence rather than replace each material |
 | Global colour is intense or dirty | Return to source-informed local-colour families; reduce competing mid-saturation regions; restore a neutral bridge; separate pigment, illumination and environment influence; weaken the final grade |
-| Face is recognizable but less attractive | Preserve the visible identity signature; rebuild only head/neck attachment, connected brow-eye/nose-mouth-chin/cheek-jaw planes, expression edges and face light; quiet skin texture and keep successful composition/colour |
-| Face becomes generically pretty | Restore visible ratios, asymmetry, gaze, mouth tension, jaw/hairline and expression; remove template-like eye, chin, skin and contour changes |
+| Face is recognizable but geometry or beauty degraded | Restore source facial landmarks, ratios, gaze, expression, asymmetry and head-neck geometry; correct only light/shadow grouping, paint edges and artifacts inside the lock; keep successful composition/colour |
+| Face becomes generically pretty | Restore source ratios, asymmetry, gaze, mouth tension, jaw/hairline and expression exactly; remove template-like eye, chin, skin and contour changes |
 | Prop is copied too literally | Keep category, owner/contact, functional state, dominant colour and essential motif; redesign silhouette rhythm, panels, repeat grouping, partial occlusion, material highlights and edge treatment |
 | Prop loses identity | Restore semantic state, contact, signature colour and essential motif while retaining successful authored construction |
 | Subject feels pasted or weakly lit | Define one motivated key, readable focal planes, retained shadow-side separation, limited bounce, contact/occlusion and a supportive background field; remove global rim or glow |
+| Human pose, limbs, hands, feet, clothing silhouette or contacts drift | Restore the exact source-visible geometry and contacts without changing successful environment, composition, colour or material modules; reinspect every joint and extremity |
+| Human geometry is correct but the person looks pasted | Keep all human geometry fixed; repaint only light/shadow grouping, edges, material handling, contact shadows/reflections and grade so person and environment share one visual system |
 | Plastic 3D | Replace smooth gradients with broader faceted planes; reduce wet gloss and uniform speculars |
 | Global oil filter/noise | Remove all-over texture; localize marks by material and focus |
 | Mosaic or patchwork relief | Flatten the full surface; reconnect continuous colour/value shapes; retain mild body only on named overlaps, contacts, turns, crests or foreground separators |
 | Light depth becomes heavy sculpture | Reduce body and surface shine until composition, colour and shape dominate; keep distant and continuous fields nearly flat |
-| Photographic underpainting | Rebuild silhouette, face/object planes, fold groups, and environment masses before specifying any brush texture |
+| Photographic underpainting | Regroup light/paint planes inside locked human geometry; rebuild non-human silhouettes/object planes, fold groups and environment masses before specifying brush texture |
 | Thumbnail remains source-identical or multiple axes are too weak | Stop surface refinement; choose one decisive primary macro departure that reallocates a major area, changes focal scale/crop/overlap, creates an active void/occluder, compresses depth, or rebuilds light/color-zone topology; state its aesthetic payoff, then add one supporting move |
 | Environment remains scenic/literal | Choose one hero form and counterform/current; merge repeated assets into a few rhythm groups; make one source-owned primary departure large enough to change the blur map, then reinforce it with one supporting move |
 | Exaggeration feels random | Return to the source's dominant gesture and protected anchors; keep only the axes that improve hierarchy, rhythm, and viewing path |
@@ -144,4 +153,4 @@ If the targeted retry still fails, return the best actual result with a precise 
 
 ## Cross-model Consistency Rule
 
-Cross-model consistency means contract consistency, not pixel identity. Compare each model output independently against the same portable render contract. The set is consistent only when every output clears the critical conditions and all applicable style-recognition items; a strong average cannot hide one filtered, source-literal, materially uniform, aesthetically degraded, prop-traced, dirty-graded, or semantically drifting result. Differences in individual brush stamps, motif repeat count, tiny texture, subtle facial planes, and exact hue are acceptable only when recognition, aesthetic coherence, prop reconstruction, subject-light ownership and assigned colour roles remain stable.
+Cross-model consistency means contract consistency, not pixel identity. Compare each model output independently against the same portable render contract. The set is consistent only when every output clears the critical conditions and all applicable style-recognition items; a strong average cannot hide one human-geometry-drifting, pasted-person, filtered, source-literal, materially uniform, prop-traced, dirty-graded, or semantically drifting result. Differences in individual brush stamps, motif repeat count, tiny texture, paint-plane residue and exact hue are acceptable only when human geometry, finished-frame integration, prop reconstruction, subject-light ownership and assigned colour roles remain stable.

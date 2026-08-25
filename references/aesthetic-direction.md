@@ -2,6 +2,8 @@
 
 Read this for every supplied-image edit with a focal person, creature, product, prop, or other recognition-critical subject. Also read it when reviewing a result for unattractive faces, literal prop copying, passive composition, dirty colour, weak subject separation, or poor painterly finish.
 
+For a visible person in an Edit Target, `human-preservation.md` takes priority over any phrase here that might otherwise imply anatomical redesign. Improve the painted presentation only inside the locked facial/body geometry; do not improve beauty by changing ratios, pose, limbs, hands, feet, or clothing silhouette.
+
 The source supplies evidence. The finished frame still needs an art director. Preserve what makes the subject and scene recognizable, then actively choose how composition, shape, light, colour, and material treatment make them more compelling.
 
 ## Separate Recognition Anchors from Design Anchors
@@ -11,7 +13,7 @@ These two anchor sets must not be merged.
 ### Recognition anchors — preserve
 
 - who or what the focal subject is;
-- count, action, pose family, gaze or functional state;
+- count, action, and functional state; for a visible human Edit Target, the exact visible pose, gaze, expression, body proportions, joints, limbs, hands, feet, clothing silhouette, and contacts;
 - identity-defining facial ratios, silhouette cues, product geometry, or species traits;
 - ownership and contact relationships: who holds, wears, sits on, touches, or stands beside what;
 - signature local-colour families required for recognition;
@@ -19,9 +21,9 @@ These two anchor sets must not be merged.
 
 ### Design anchors — author
 
-- crop, headroom, subject scale, negative-space balance, overlap pressure, and viewing path;
+- crop, headroom, whole-subject apparent scale as one undistorted unit, negative-space balance, environment overlap pressure, and viewing path;
 - the cleanest readable silhouette and the rhythm of large internal planes;
-- which facial planes, garment folds, prop panels, pattern groups, foliage clusters, or architectural repetitions are merged, strengthened, or omitted;
+- how light/shadow and paint are grouped inside preserved human landmarks; which non-identity-critical garment folds, prop panels, pattern groups, foliage clusters, or architectural repetitions are merged, strengthened, or omitted;
 - the subject's light envelope, local contrast, edge hierarchy, and relationship to the surrounding field;
 - colour-area balance, chroma hierarchy, reflected colour, and final grade;
 - material-specific mark direction and the few locations that receive light tactile depth.
@@ -34,7 +36,7 @@ Before rendering, state one visible compositional improvement and why it benefit
 
 Useful moves include:
 
-- increase or reduce focal scale so the expression, gesture, object, landform, or spatial relationship reads at thumbnail size;
+- increase or reduce focal scale so the expression, gesture, object, landform, or spatial relationship reads at thumbnail size; for a human Edit Target, change only crop or uniform whole-person apparent scale, never a face/body part locally;
 - change headroom or quiet-area distribution to give the focal silhouette pressure or release;
 - crop incidental clutter while keeping recognition-critical contact and topology;
 - strengthen one source-owned diagonal, curve, aperture, horizon band, shadow wedge, or foreground overlap;
@@ -45,7 +47,7 @@ Do not restage merely to prove that change occurred. The result should retain th
 
 ## Focal Beauty without Generic Beautification
 
-For a recognizable face, preserve the identity signature while redesigning its painted presentation.
+For a recognizable face in an Edit Target, preserve the identity signature **and the visible geometry** while redesigning only its painted presentation.
 
 Record the identity signature from visible evidence:
 
@@ -56,17 +58,17 @@ Record the identity signature from visible evidence:
 - cheek, jaw, hairline, fringe, and hair-silhouette relationships;
 - visible asymmetries that contribute to likeness.
 
-Then improve the aesthetic read through:
+Then improve the aesthetic read without moving those relationships:
 
-- a clean face silhouette and believable head/neck attachment;
-- a small set of connected planes that turn around the brow, eye socket, cheek, nose, mouth, and jaw;
+- clean paint-edge articulation around the unchanged face silhouette and source head/neck attachment;
+- a small set of connected light/paint planes that turn around the existing brow, eye socket, cheek, nose, mouth, and jaw landmarks without changing their shape or placement;
 - controlled eye and mouth edges, with no uniform outline;
 - quiet skin texture and restrained paint height;
 - light that clarifies expression without bleaching skin or flattening features;
 - hair, clothing, and background shapes that frame rather than cut awkwardly through the face;
-- removal of accidental lumps, muddy shadows, crossed contours, asymmetry drift, and coarse marks that were not identity features.
+- removal of generation artifacts, muddy shadows, crossed paint edges, and coarse marks while restoring the source geometry rather than inventing a new facial construction.
 
-Do not narrow the face, enlarge eyes, sharpen the chin, whiten skin, smooth all asymmetry, or replace the person with a generic attractive template. Beauty means a coherent, flattering presentation of the same visible identity—not a different face.
+Do not narrow the face, enlarge eyes, sharpen the chin, whiten skin, smooth asymmetry, change gaze/expression, alter head/neck attachment, reshape the body, re-pose limbs, or replace the person with a generic attractive template. Beauty means a coherent, flattering light/colour/edge presentation of the same visible geometry—not a different face or body.
 
 ## Reconstruct Salient Props instead of Tracing Them
 
@@ -148,7 +150,7 @@ Do not use coarse paint, raised tiles, aggressive faceting, or uniform brush noi
 ## Compact Prompt Clause
 
 ```text
-Aesthetic direction: preserve [recognition anchors and identity signature], but actively author [crop/focal scale/negative space/overlap/viewing path]. Rebuild the focal face/object with [connected planes, flattering light, controlled eye/object edges] while keeping the same identity rather than applying generic beautification. Preserve [prop category, owner/contact, dominant colour, essential motif], but redesign [silhouette rhythm, internal panels, motif grouping, material and overlap] instead of tracing incidental details. Separate local colour, [motivated key light], [limited environment influence], and a restrained final grade. Let [background field] support the focal subject through [value/hue/edge relationship]; keep peak chroma and sharpest useful accents on [focal path]. Preserve successful source colour relationships, rebalance only [specific issue], and avoid global saturation, muddy mid-chroma, copied prop detail, unattractive facial plane drift, uniform rim light, and texture standing in for design.
+Aesthetic direction: preserve [recognition anchors]. For a human Edit Target, hard-lock [facial landmarks/expression/gaze/head-neck/body proportions/pose/limbs/hands/feet/clothing silhouette/contacts] and author only [crop/uniform whole-person scale/negative space/environment overlap/viewing path] around it. Regroup light and paint inside the existing face geometry with [connected planes, flattering motivated light, controlled eye edges] without moving landmarks or beautifying anatomy; use the same light, colour, edge, plane and material system on person and environment. Preserve [prop category, owner/contact, dominant colour, essential motif], but redesign [silhouette rhythm, internal panels, motif grouping, material and overlap] instead of tracing incidental details. Separate local colour, [motivated key light], [limited environment influence], and a restrained final grade. Let [background field] support the focal subject through [value/hue/edge relationship]; keep peak chroma and sharpest useful accents on [focal path]. Preserve successful source colour relationships, rebalance only [specific issue], and avoid global saturation, muddy mid-chroma, pasted photographic people, human-geometry drift, copied prop detail, uniform rim light, and texture standing in for design.
 ```
 
 ## Review Gates
@@ -156,7 +158,8 @@ Aesthetic direction: preserve [recognition anchors and identity signature], but 
 Every applicable gate must pass.
 
 - **Composition authorship:** the crop, focal scale, negative space, overlap, or viewing path contains a visible improvement with a clear purpose.
-- **Identity-plus-beauty:** the person remains recognizable and the face is at least as coherent, expressive, and aesthetically resolved as the source unless deliberate discomfort is requested.
+- **Human geometry plus beauty:** the person retains source facial/body geometry, exact visible pose and contacts; the face is at least as coherent and aesthetically resolved through light, colour and edge treatment without anatomical beautification.
+- **Style integration:** the protected person and authored environment share one light field, colour logic, abstraction family, edge hierarchy, material world, contact treatment, and final grade.
 - **Prop redesign:** semantic identity is preserved, but incidental geometry and pattern rhythm have been visibly reconstructed.
 - **Subject-light ownership:** the focal subject has a motivated, plane-readable light relationship and a supportive background field.
 - **Colour-layer separation:** local colour, illumination, reflected/atmospheric influence, and final grade remain distinguishable.
@@ -167,11 +170,12 @@ Every applicable gate must pass.
 
 | Failure | Correction |
 |---|---|
-| Face is recognizable but less attractive | Keep the identity signature; rebuild only head/neck attachment, brow-eye, nose-mouth-chin, cheek/jaw planes, expression edges, and face light; quiet skin texture and leave successful composition/colour unchanged |
-| Face becomes generically pretty | Restore visible ratios, asymmetry, gaze, mouth tension, jaw/hairline and expression; remove cosmetic template features |
+| Face is recognizable but geometry or beauty degraded | Restore source facial landmarks, expression, gaze and head/neck geometry; correct only light/shadow grouping, paint edges and artifacts inside that lock; quiet skin texture and leave successful composition/colour unchanged |
+| Face becomes generically pretty | Restore source ratios, asymmetry, gaze, mouth tension, jaw/hairline and expression exactly; remove cosmetic template features and any local reshaping |
 | Prop is copied too literally | Keep category, owner/contact, dominant colour and essential motif; redesign silhouette rhythm, panels, repeat spacing, partial occlusion, highlights, and edge treatment |
 | Prop loses identity | Restore its semantic state, contact, signature colour and one or two defining cues; retain the successful authored plane and pattern grouping |
 | Subject feels pasted or weakly lit | Define one motivated key direction, one limited bounce, a believable contact/occlusion, and a background counterfield; remove global rim or glow |
+| Human pose, limbs, hands, feet or contacts drift | Restore the exact source geometry and contacts without altering successful environment/composition modules; reinspect every joint and extremity |
+| Human geometry is correct but style is pasted | Keep all human geometry; repaint only light/shadow grouping, edges, material handling, contact shadows and grade so the person shares the environment's visual system |
 | Colour is too strong or dirty | Return to source-informed local-colour families; reduce competing mid-saturation regions, restore a neutral bridge, separate light colour from pigment colour, and weaken the final grade |
 | Result is faithful but ungenerative | Change one purposeful composition relationship and rebuild focal silhouette/planes or prop pattern grouping; do not add more texture |
-

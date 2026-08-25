@@ -50,7 +50,7 @@ Choose one primary source that can be inferred from the image: window, door, fir
 
 Use haze to reveal selected beams, not to fog the whole frame. Keep bloom tight. Do not outline every dark surface with colored rim light.
 
-For a focal person or recognition-critical object, define the subject–illumination relationship before the final grade: which planes the key reveals, what remains separated on the shadow side, which limited bounce/reflection belongs to the environment, and which background value/hue field supports the silhouette. Keep facial/local colour stable while lighting changes around it.
+For a focal person or recognition-critical object, define the subject–illumination relationship before the final grade: which existing planes the key reveals, what remains separated on the shadow side, which limited bounce/reflection belongs to the environment, and which background value/hue field supports the silhouette. For a visible human Edit Target, keep facial/body geometry and local colour stable while grouping light and paint inside it; use the same light field, colour logic, edge hierarchy, abstraction family, material world, contacts and final grade across person and environment.
 
 ### 5. Spatial depth plus graphic surface
 
@@ -72,13 +72,13 @@ For photo remakes, do not preserve photographic shading and then cover it with t
 
 If the frame still reads as the original photograph beneath one uniform brush treatment, the transformation failed.
 
-For focal faces and salient props, read [aesthetic-direction.md](aesthetic-direction.md). Preserve the visible identity/object signature, but actively design its painted presentation. Faces need connected, flattering planes and controlled expression edges without generic beautification. Props keep category, owner/contact, dominant colour and essential motif, while silhouette rhythm, panels, pattern repeats, highlights, material and overlap are rebuilt rather than traced.
+For focal faces and salient props, read [aesthetic-direction.md](aesthetic-direction.md). For every visible human Edit Target, also read [human-preservation.md](human-preservation.md): facial landmarks, expression/gaze, head-neck attachment, body proportions, exact pose, limbs, hands, feet, clothing silhouette and contacts are fixed. Design only light/shadow grouping, paint planes and edge control inside that geometry, plus crop, uniform whole-person scale and surrounding scene relationships. Props keep category, owner/contact, dominant colour and essential motif, while silhouette rhythm, panels, pattern repeats, highlights, material and overlap are rebuilt rather than traced.
 
 ### 7. Environment as a designed subject
 
 When the environment carries the focal event, do not fall back to realistic scenic illustration. Give one landform, structure, void, weather mass, or light shape the role normally carried by a character silhouette. Oppose it with one source-owned current or counterform such as a river, road, forest wall, shadow wedge, cloud band, machinery line, or crowd flow.
 
-In Style-first/Expressive work, compress repeated assets into a few rhythm groups and make one primary macro departure plus one supporting move—scale takeover, area reallocation, crop/restage, foreground occlusion, perspective/depth compression, negative-space takeover, light-shape rearchitecture, color-zone restaging, or a motivated subjective rupture. Preserve declared anchors, but let the frame become more designed than documented. The primary move must change a major mass, contour, overlap, focal scale, light topology, or color-zone relationship at 128–256 px. A beautiful frame without visible transfiguration is still too literal for this mode.
+In Style-first/Expressive work, compress repeated assets into a few rhythm groups and make one primary macro departure plus one supporting move—scale takeover, area reallocation, crop/restage, foreground occlusion, perspective/depth compression, negative-space takeover, light-shape rearchitecture, color-zone restaging, or a motivated subjective rupture. Preserve declared anchors, but let the frame become more designed than documented. With a visible human Edit Target, carry that departure through crop, uniform whole-person-to-environment scale, environment forms, negative space, depth, light or color zones—not through local anatomy, pose or contacts. The primary move must change a major mass, contour, overlap, focal scale, light topology, or color-zone relationship at 128–256 px. A beautiful frame without visible transfiguration is still too literal for this mode.
 
 Use [environment-abstraction.md](environment-abstraction.md) for the full contract. Do not apply its distortion rules to protected faces, products, text, architecture, maps, or documentary geometry.
 
@@ -94,7 +94,7 @@ Do not equate context compression with uniform softness. Keep a few structural e
 
 ### 9. Faceted painterly modeling
 
-Model faces and objects with stepped planes rather than uniform gradients. For a face, 4–7 meaningful plane changes are usually enough before small accents. Allow cool and warm shifts within skin, but keep skin quieter than scar, fabric, wall, metal, smoke, or magical material.
+Model generated faces and objects with stepped planes rather than uniform gradients. For a human Edit Target, group about 4–7 connected light/paint changes inside the existing landmarks without moving or reshaping them. Allow source-compatible cool and warm shifts within skin, but keep skin quieter than scar, fabric, wall, metal, smoke, or magical material.
 
 Use visible brush boundaries locally. Faceted colour/value planes are not separate raised tiles: keep plane sizes irregular, joined by form, and subordinate to the whole silhouette. Avoid global canvas grain, noisy pores, waxy subsurface skin, wet-plastic highlights, evenly sharp hair strands, repeated palette-knife rectangles, or a tessellated mosaic surface.
 
@@ -147,7 +147,7 @@ For action, choose one verb—strike, flee, brace, reach, fall, aim, confront—
 - Concentrate microcontrast around eyes/expression or one narrative mark.
 - Differentiate skin, cloth, metal, wall, smoke, and energy through plane size, edge, and reflectance.
 - Keep peripheral texture broad and incomplete.
-- Compare the face with the source: recognition alone is insufficient if jaw/cheek, brow-eye, nose-mouth-chin, expression, head/neck attachment, or face light is less coherent and less aesthetically resolved.
+- Compare the person with the source: recognition alone is insufficient. Jaw/cheek, brow-eye, nose-mouth-chin, gaze/expression, head/neck attachment, body proportions, pose, limbs, hands, feet, clothing silhouette and contacts must remain unchanged; light/paint integration must be coherent with the environment.
 - Compare salient props with the source: semantic identity should remain, but incidental panel lines, repeat positions, folds, highlight accidents, and contour noise should not align as a literal copy.
 
 ## Composition Families
@@ -163,7 +163,7 @@ Choose one primary family:
 7. **Threshold stage:** a hard pool of light, door rectangle, or floor plane separates exposed subject from shadow audience.
 8. **Monument and current:** one enlarged landform/structure/void dominates while a river, road, crowd, shadow, or weather ribbon pulls toward or against it.
 9. **Ruptured strata:** broad stacked sky/land/water/interior bands are interrupted by one vertical, diagonal, void, or light break.
-10. **Extreme fragment:** one source-owned face, hand, prop, beam, branch, wall, or machine part crosses the frame as an enlarged foreground shape while the main subject/environment becomes a counterform.
+10. **Extreme fragment:** one source-owned prop, beam, branch, wall, machine part—or a face/hand only when no human Edit Target hard lock applies—crosses the frame as an enlarged foreground shape while the main subject/environment becomes a counterform.
 
 Use canted framing only when instability, intoxication, danger, or broken order benefits the story.
 

@@ -53,6 +53,8 @@ Do not turn this into a numeric height ladder. The useful rule is perceptual: th
 
 Keep faces, skin, hands, text, product edges, garment openings, footwear junctions and other recognition-critical boundaries gentle. A tactile accent must not change anatomy, local colour, silhouette or object contact.
 
+For a visible human Edit Target, tactile treatment must also match the frame's shared painterly material world without becoming a separate skin or clothing texture layer. Keep human geometry fixed, use little or no body on skin, and integrate person and environment through compatible brush rhythm, edge behavior, light and grade rather than through thicker paint.
+
 Beauty takes precedence over visible physical effect. If relief competes with the face, focal colour, silhouette, atmosphere or viewing path, reduce it.
 
 Tactile depth cannot repair weak composition, unattractive facial construction, literal prop copying, unmotivated subject light, or dirty grading. Correct those modules first; then add mild body only to the spatial carriers that remain useful.

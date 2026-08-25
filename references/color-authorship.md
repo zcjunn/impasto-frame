@@ -41,7 +41,7 @@ Build colour in four stages:
 
 Record where these layers agree and where they differ. A red prop under cool sky light remains recognizably red; skin influenced by green vegetation does not become green paint; white cloth may carry sky and ground reflections without losing its neutral identity.
 
-The final grade may unify hue bias, black/white balance, or overall chroma, but it may not overwrite protected local colour, material differences, subject illumination, neutral bridges, or focal ownership. If removing the imagined grade destroys the palette, the grade was doing work that belongs to local colour, value grouping, or light design.
+The final grade may unify hue bias, black/white balance, or overall chroma, but it may not overwrite protected local colour, material differences, subject illumination, neutral bridges, or focal ownership. For a visible human Edit Target, preserve skin, hair, eye/mouth accents, wardrobe anchors and their internal color relationships while applying the same motivated illumination, environmental influence and restrained grade used across the scene. Do not isolate the person with a separate mask-like grade, and do not recolor or relight them so strongly that facial/body geometry appears changed. If removing the imagined grade destroys the palette, the grade was doing work that belongs to local colour, value grouping, or light design.
 
 ## Select Contrast by Function
 
@@ -114,6 +114,7 @@ When the source palette is already quiet and strong, choose no new collision and
 - Evaluate the color-block map at thumbnail scale. Rebalance/Re-script should change visible area, adjacency, or ownership, not merely produce a different overall cast.
 - Let the focal subject own the clearest useful light/colour relationship. Define the key direction, shadow-side separation, optional bounce, supportive background field, and the focal accent before increasing overall chroma.
 - Protect faces from global grading: keep skin-local colour, eye/mouth accents, hairline, and clothing boundaries coherent under the scene light. Do not use orange skin, pale face glow, or full-rim outlining as generic separation devices.
+- Integrate without repainting identity: the person and environment share the same key direction, shadow family, bounce logic and final grade, but protected human local colours and geometry remain stable. A photographic-looking person under a separate correction mask fails even when the background palette is strong.
 - Treat saturation as an area budget. Do not let sky, vegetation, skin, wardrobe, and prop all peak simultaneously; keep one dominant family, one controlled apex, and enough quiet low-chroma material to prevent dirtiness.
 
 ## Surface Reflection Is Not Colour Authorship
@@ -142,6 +143,8 @@ Use a compact visible contract:
 Color authorship: use [Preserve-and-refine/Rebalance/Re-script]. The source already succeeds at [observed strengths] and needs correction at [specific issue]. Use [primary contrast strategy] with [optional subordinate strategy]. Assign [dominant field: location, hue family, value, chroma], [structural counter: owner and function], [focal accent/apex: owner and function], and [optional connector/neutral bridge]. The Tier 3 context converges toward [scene-owned chromatic gray/quiet color family] through lower [hue noise/local contrast/microcontrast/edge density/texture frequency] while retaining [depth/material cues]. Color collision is [None/Preserve existing/Author new: owners, adjacency, dominance, function]. Preserve [protected local-color anchors]. Let [motivated light] influence rather than replace material color. Avoid [specific likely imbalance or cliché].
 
 Layered colour: establish [local-colour owners] first; let [primary light] modify [reachable planes]; add only [limited environment reflection/atmosphere]; finish with [restrained grade and its limits]. The subject separates from [background field] through [value/hue/chroma/edge relationship]. Do not globally intensify [likely competing regions].
+
+Human integration when present: preserve [skin/hair/wardrobe/eye-mouth local-color anchors] and all source geometry; place the person inside the same [key direction, shadow family, bounce/reflection logic, chromatic-gray context relationship and restrained final grade] as the environment. Avoid a separate mask-like person grade, skin recoloring, or local light that contradicts the scene.
 ```
 
 Name exact hue families only after roles are clear. Prefer two or three important color decisions over a long palette inventory.
@@ -168,3 +171,4 @@ Reject or correct:
 - illumination colour replacing local colour rather than influencing it;
 - a focal face that is separated mainly by orange skin, pale glow, or a uniform coloured rim;
 - a palette that only works because of a global grade and collapses when that grade is mentally removed.
+- a protected person rendered with a separate photographic, skin-tone, light, or grade system that makes them look pasted into the authored environment.

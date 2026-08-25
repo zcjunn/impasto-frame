@@ -1,6 +1,6 @@
 {
   "skill": "impasto-frame-skill",
-  "purpose": "Natural-language discovery cases for authored painterly frames, focal beauty, prop reconstruction, layered colour, subject light and restrained relationship-driven tactile depth. Run separately from effect evaluation; do not name the skill in requests.",
+  "purpose": "Natural-language discovery cases for authored painterly frames, hard-locked human geometry with integrated style, directed abstraction, layered colour, subject light and restrained relationship-driven tactile depth. Run separately from effect evaluation; do not name the skill in requests.",
   "should_trigger": [
     {
       "id": "photo-to-authored-painterly-frame",
@@ -29,6 +29,10 @@
     {
       "id": "review-dirty-grade-subject-light",
       "request": "帮我检查这张风格化图为什么人物不耐看、道具像复刻、颜色太艳发脏，以及主体照明和背景照度是否失衡。"
+    },
+    {
+      "id": "human-preserving-environment-restage",
+      "request": "人物的五官、姿势、四肢和接触关系全部不要变，但请把周围环境、负空间和光色重新导演成一幅统一的绘画画面，人物不能像照片贴在背景上。"
     }
   ],
   "should_not_trigger": [

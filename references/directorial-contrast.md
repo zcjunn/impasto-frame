@@ -24,7 +24,7 @@ Choose one **primary macro departure** and one **supporting move**. For Style-fi
 
 Primary macro departure options:
 
-1. **Scale takeover:** enlarge a face, hand, prop, landform, void, or light source until it changes the composition family.
+1. **Scale takeover:** enlarge a prop, landform, void, light source, environment form, or—when no human hard lock applies—a face/hand until it changes the composition family. For a visible person in an Edit Target, use only uniform whole-person scale through crop/restage; never enlarge or distort a face, hand, foot, or limb locally.
 2. **Area reallocation:** let sky, wall, shadow, water, snow, architecture, crowd, or atmosphere gain/lose substantial visual territory.
 3. **Crop/restage:** move from documentary inclusion to an authored close, partial, asymmetric, or compressed staging while preserving declared anchors.
 4. **Foreground occlusion:** introduce or enlarge a source-owned foreground mass that crops, frames, divides, or pressures the focal event.
@@ -73,6 +73,15 @@ Preserve identity, count, action, gaze, protected geometry, required text, and r
 
 If architecture, product geometry, map structure, text, or documentary topography is protected, keep it stable and direct the macro departure into crop, foreground, light shape, atmosphere, color zoning, or surrounding transformable space.
 
+### Human-preserving distribution changes
+
+When a visible person is an Edit Target, identity fidelity protects more than recognizability: lock facial landmarks, expression/gaze, head/neck attachment, body proportions, pose, every visible limb/joint, hands, feet, clothing silhouette, and contacts. Composition distribution may still change around that lock.
+
+- Change crop, headroom, negative-space share, horizon, background area, environment form scale, depth bands, light shape, color-zone adjacency, or whole-person apparent scale as one undistorted unit.
+- Do not use a local face/body enlargement, pose change, limb foreshortening, or anatomy redesign as the primary or supporting move.
+- Let the surrounding masses carry the visible restaging while the locked person is repainted through the same plane, edge, light, color, and material system as the rest of the frame.
+- Judge the result by finished-frame coherence: a correct person pasted over a more abstract background is not a pass, and an integrated painterly person with changed geometry is not a pass.
+
 ## Assign Contrast Ownership
 
 Contrast is a budget, not one global slider. Audit and assign these independent dimensions:
@@ -102,6 +111,21 @@ Compress local value range, microcontrast, edge density, hue noise, and texture 
 
 Only the dimensions needed for the focal read should peak. Do not make the subject simultaneously the brightest, darkest, sharpest, most saturated, most textured, largest, and most central unless overwhelming spectacle is the explicit narrative.
 
+### Required six-dimension budget
+
+Before prompting, explicitly assign a relative `Low / Medium / High` (or an equally concrete relational description) for all six dimensions below. The table is a default relationship, not a fixed look; a quiet focal owner may invert one dimension when the reason is stated, but unassigned or equal-everywhere treatment fails.
+
+| Dimension | Tier 1 — focal owner | Tier 2 — support | Tier 3 — context |
+|---|---|---|---|
+| Local value contrast | clear, selective peak or deliberate quiet focal separation | medium structural steps | compressed within readable broad bands |
+| Microcontrast | concentrated on recognition/event cues | moderate, grouped | low; no noisy midtone chatter |
+| Edge density | few purposeful hard/mixed edges | medium structural edges | sparse, mostly soft/lost with key depth separators |
+| Chroma | controlled apex or protected identity anchor | subordinate echo/counter | scene-owned chromatic gray or quiet local-colour family |
+| Hue noise | intentional, material/light-driven variation | limited | very low; retain only depth/material shifts |
+| Texture frequency | focal material/event accents | medium grouped rhythm | broad low-frequency masses with rare structural detail |
+
+Record the budget as six explicit Tier 1→Tier 2→Tier 3 relationships. “More contrast on the subject” is insufficient because models interpret it inconsistently.
+
 ## Chromatic Gray, Not Gray Fog
 
 Non-focal regions may recede through chromatic gray: blue-gray, green-gray, violet-gray, warm stone gray, desaturated local color, or another scene-owned near-neutral.
@@ -118,7 +142,7 @@ The background should feel quiet and colored, not dead, muddy, or disconnected f
 
 ## Author a Color Collision Only When It Solves the Frame
 
-Color collision means a localized discontinuity that owns attention. It can be:
+Declare the mode first as exactly `None`, `Preserve existing`, or `Author new`. Color collision means a localized discontinuity that owns attention. It can be:
 
 - hue opposition;
 - warm/cool separation;
@@ -141,8 +165,8 @@ If the source already has a strong, quiet palette, do not invent a collision. Pr
 
 ## Shot-scale and Scene Decisions
 
-- **Portrait/character:** consider a face, hand, shoulder, coat, weapon, or foreground body as a scale-takeover shape; keep identity anchors, not photographic headroom.
-- **Portrait/character with salient prop:** treat the face/body and prop as a designed relationship. Preserve identity, action, ownership/contact, prop category and essential motif; author their relative scale, overlap, silhouette rhythm, internal planes, pattern grouping, light envelope and negative space. Do not trace incidental prop panels or repeat positions.
+- **Portrait/character:** for generated characters, a face, hand, shoulder, coat, weapon, or foreground body may become a scale-takeover shape. For a human Edit Target, keep the entire visible human geometry and pose fixed internally; author crop, whole-person scale, headroom, environment mass, negative space, light shape, and color zoning around it.
+- **Portrait/character with salient prop:** treat the locked person and redesignable prop as a coherent relationship. Preserve human geometry, action, ownership/contact, prop category and essential motif; author crop, whole-person-to-prop/environment scale, prop silhouette rhythm, internal planes, pattern grouping, shared light envelope and negative space. Do not trace incidental prop panels or repeat positions, and do not alter the person to accommodate the prop redesign.
 - **Relationship:** use overlap, unequal scale, opposing profiles, gaze corridors, or an active dark/bright wedge; avoid evenly spaced side-by-side staging.
 - **Environment:** give one landform, structure, void, weather mass, road, river, or light shape actor status; preserve the semantic relationship, not incidental distribution.
 - **Architecture/product:** protect required geometry; direct abstraction into crop, aperture, light, reflection, atmosphere, surrounding masses, and color zoning.
@@ -158,7 +182,9 @@ Directorial proposition: [actor] is [visible pressure/relationship] against [cou
 Primary macro departure: [specific scale/area/crop/occlusion/perspective/negative-space/light/color-zone change] so [major silhouette or area relationship] differs from the source at thumbnail scale.
 Supporting move: [specific secondary change]. Preserve [declared anchors], but do not preserve [incidental distribution].
 Contrast ownership: Tier 1 [owner] receives [selected value/edge/chroma/texture dimensions]; Tier 2 [support] retains [medium structural cues]; Tier 3 [context] becomes a unified [chromatic-gray or scene-owned colored] field through reduced [local contrast/microcontrast/edge density/hue noise/texture frequency], while preserving [depth/material cues].
-Color collision: [none, preserve existing, or explicit owners/adjacency/dominance/function].
+Six-dimension budget: local contrast [T1/T2/T3]; microcontrast [T1/T2/T3]; edge density [T1/T2/T3]; chroma [T1/T2/T3]; hue noise [T1/T2/T3]; texture frequency [T1/T2/T3].
+Human lock when present: preserve [face landmarks/expression/gaze/head-neck/body proportions/pose/limbs/hands/feet/clothing silhouette/contacts]; apply the macro change only through [crop, uniform whole-person scale, surrounding masses, negative space, depth, light, or color zones]; integrate the person through the same [light/color/edge/plane/material] system.
+Color collision: [None / Preserve existing / Author new: explicit owners, adjacency, dominance and function].
 Thumbnail target: source and result must differ in [major mass/contour/overlap/focal scale/light topology/color-zone adjacency], not only in surface texture.
 ```
 
@@ -184,5 +210,6 @@ Review source and output side by side.
 - Are material planes and selective marks supporting the macro design rather than compensating for a literal layout?
 - If tactile depth is present, does it clarify foreground/background, overlap, contact or form turning without tessellating continuous fields?
 - Does context retain colored material/depth information after microcontrast reduction?
+- When a person is present, are facial/body geometry and contacts unchanged at close scale while the person still belongs to the same painterly light, edge, colour, and material world as the environment?
 
 Style-first/Expressive fails when source and result remain essentially interchangeable in the thumbnail/blur map even if close-up painterliness is attractive.
