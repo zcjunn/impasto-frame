@@ -18,6 +18,20 @@ When a source image exists, audit it before proposing colors:
 
 Do not call a source “flat” merely because it is monochrome, cool, warm, pastel, or low-saturation. A narrow palette can be excellent when value, chroma, and spatial ownership are deliberate.
 
+## Lock the Source-led Temperature Baseline
+
+Before choosing attractive hues, identify the source's neutral evidence: white or gray fabric, snow, cloud, concrete, metal, skin in uncoloured light, shadowed neutrals, or another material whose expected local colour is known. Record which evidence is reliable and which is clipped, reflected, or strongly illuminated. This is a visual reference for the generation contract, not a request for numerical color correction.
+
+Choose one temperature policy independently from colour-authorship mode:
+
+- **Source-neutral:** hold a believable neutral axis derived from the source; use when the source is balanced or its cast is uncertain.
+- **Preserve source bias:** keep a source-owned cool, warm, green, violet, dusk, night, underwater, snow, or mixed-light character because it supports the scene.
+- **Motivated shift:** change overall or regional temperature only when a named light, atmosphere, material adjacency, spatial zone, or narrative transition owns the change.
+
+For supplied-image edits, default to `Source-neutral` or `Preserve source bias`. Never choose `Motivated shift` merely to make a person prettier, make a frame look cinematic, or signal painterly style. “Flattering light” does not mean amber skin, warm highlights, cool shadows, teal-and-orange separation, or a yellow wash. A temperature shift must name its owner, reachable region, area dominance, and limit.
+
+Record the source saturation baseline as well. Preserve-and-refine must not make the whole frame more saturated than the source; Rebalance may redistribute chroma without raising every region; Re-script may increase chroma only in owned areas while retaining a quiet bridge. These are relational controls rather than exact numeric targets.
+
 ## Choose an Authorship Mode
 
 Choose independently from identity fidelity, abstraction, and exposure.
@@ -41,7 +55,7 @@ Build colour in four stages:
 
 Record where these layers agree and where they differ. A red prop under cool sky light remains recognizably red; skin influenced by green vegetation does not become green paint; white cloth may carry sky and ground reflections without losing its neutral identity.
 
-The final grade may unify hue bias, black/white balance, or overall chroma, but it may not overwrite protected local colour, material differences, subject illumination, neutral bridges, or focal ownership. For a visible human Edit Target, preserve skin, hair, eye/mouth accents, wardrobe anchors and their internal color relationships while applying the same motivated illumination, environmental influence and restrained grade used across the scene. Do not isolate the person with a separate mask-like grade, and do not recolor or relight them so strongly that facial/body geometry appears changed. If removing the imagined grade destroys the palette, the grade was doing work that belongs to local colour, value grouping, or light design.
+The final grade may unify hue bias, black/white balance, or overall chroma, but it may not overwrite the declared source neutral/temperature policy, protected local colour, material differences, subject illumination, neutral bridges, or focal ownership. It must not add a global warm or cool cast merely for polish. If removing the imagined grade destroys the palette, the grade was doing work that belongs to local colour, value grouping, or light design.
 
 ## Select Contrast by Function
 
@@ -73,6 +87,8 @@ Assign visible responsibilities before exact hues:
 For every role, specify spatial owner, approximate area hierarchy, value range, and saturation level. Do not list attractive colors without saying where they live. Exact percentages are optional; dominance must be visible. Avoid two unrelated high-chroma families occupying similar area unless equal conflict is the intended narrative.
 
 Roles do not need different hues. In analogous, near-monochrome, or value-led plans, the structural counter and focal apex may come from value, chroma, edge, or material shifts inside one hue family. “Balanced” means controlled visual weight, not equal color area.
+
+Temperature also belongs to spatial owners, not to the whole canvas by default. State which light, atmosphere, surface, or depth band is warm/cool and where the transition stops. Unowned temperature language such as “make it warmer,” “cinematic teal shadows,” or “golden skin” is not portable across models and must be replaced by a visible owner and boundary.
 
 ## Quiet Context Through Chromatic Gray
 
@@ -114,7 +130,7 @@ When the source palette is already quiet and strong, choose no new collision and
 - Evaluate the color-block map at thumbnail scale. Rebalance/Re-script should change visible area, adjacency, or ownership, not merely produce a different overall cast.
 - Let the focal subject own the clearest useful light/colour relationship. Define the key direction, shadow-side separation, optional bounce, supportive background field, and the focal accent before increasing overall chroma.
 - Protect faces from global grading: keep skin-local colour, eye/mouth accents, hairline, and clothing boundaries coherent under the scene light. Do not use orange skin, pale face glow, or full-rim outlining as generic separation devices.
-- Integrate without repainting identity: the person and environment share the same key direction, shadow family, bounce logic and final grade, but protected human local colours and geometry remain stable. A photographic-looking person under a separate correction mask fails even when the background palette is strong.
+- Integrate people through the same motivated light and restrained final grade as the environment, but keep skin, hair, whites, footwear, and protected wardrobe colour as distinct local-colour owners. Do not place a separate warm beauty grade over the person.
 - Treat saturation as an area budget. Do not let sky, vegetation, skin, wardrobe, and prop all peak simultaneously; keep one dominant family, one controlled apex, and enough quiet low-chroma material to prevent dirtiness.
 
 ## Surface Reflection Is Not Colour Authorship
@@ -142,9 +158,9 @@ Use a compact visible contract:
 ```text
 Color authorship: use [Preserve-and-refine/Rebalance/Re-script]. The source already succeeds at [observed strengths] and needs correction at [specific issue]. Use [primary contrast strategy] with [optional subordinate strategy]. Assign [dominant field: location, hue family, value, chroma], [structural counter: owner and function], [focal accent/apex: owner and function], and [optional connector/neutral bridge]. The Tier 3 context converges toward [scene-owned chromatic gray/quiet color family] through lower [hue noise/local contrast/microcontrast/edge density/texture frequency] while retaining [depth/material cues]. Color collision is [None/Preserve existing/Author new: owners, adjacency, dominance, function]. Preserve [protected local-color anchors]. Let [motivated light] influence rather than replace material color. Avoid [specific likely imbalance or cliché].
 
-Layered colour: establish [local-colour owners] first; let [primary light] modify [reachable planes]; add only [limited environment reflection/atmosphere]; finish with [restrained grade and its limits]. The subject separates from [background field] through [value/hue/chroma/edge relationship]. Do not globally intensify [likely competing regions].
+Temperature policy: use [Source-neutral/Preserve source bias/Motivated shift] from [reliable neutral or source evidence]. [Named light/atmosphere/material/depth owner] may shift [reachable region] toward [direction], while [protected neutrals/local colours] remain stable. Do not apply an automatic warm beauty grade or universal cool shadow family.
 
-Human integration when present: preserve [skin/hair/wardrobe/eye-mouth local-color anchors] and all source geometry; place the person inside the same [key direction, shadow family, bounce/reflection logic, chromatic-gray context relationship and restrained final grade] as the environment. Avoid a separate mask-like person grade, skin recoloring, or local light that contradicts the scene.
+Layered colour: establish [local-colour owners] first; let [primary light] modify [reachable planes]; add only [limited environment reflection/atmosphere]; finish with [restrained grade and its limits]. The subject separates from [background field] through [value/hue/chroma/edge relationship]. Keep overall chroma [at/below/reallocated from] the source baseline according to the selected mode. Do not globally intensify [likely competing regions].
 ```
 
 Name exact hue families only after roles are clear. Prefer two or three important color decisions over a long palette inventory.
@@ -171,4 +187,21 @@ Reject or correct:
 - illumination colour replacing local colour rather than influencing it;
 - a focal face that is separated mainly by orange skin, pale glow, or a uniform coloured rim;
 - a palette that only works because of a global grade and collapses when that grade is mentally removed.
-- a protected person rendered with a separate photographic, skin-tone, light, or grade system that makes them look pasted into the authored environment.
+- an unexplained whole-frame shift toward amber, yellow-green, teal, blue, or another cast compared with reliable source neutrals;
+- warm skin, warm whites, warm snow, warm clouds, or warm speculars introduced together without a named warm light reaching all of them;
+- one universal cool shadow or warm highlight hue applied across unrelated materials;
+- a Preserve-and-refine result whose average chroma is visibly stronger than the source without a localized ownership reason.
+
+## Targeted Colour Corrections
+
+Correct only the failed colour module and preserve successful composition, identity, shape, light geometry, material design, and tactile-depth decisions.
+
+| Failure | Correction |
+|---|---|
+| Output is warmer than the source | Return the final grade to the declared source neutral/temperature baseline; restore neutral whites and material local colours; keep warmth only on planes reached by a named warm source |
+| Output is cooler or teal by default | Restore source shadow families and neutral bridges; keep cool influence only in the owned sky, atmosphere, practical light, reflection, or depth zone |
+| Vegetation becomes dirty yellow-green | Recover distinct green local-colour families and source sky influence; reduce yellow contamination and competing mid-saturation rather than globally desaturating |
+| Snow, cloud, white cloth, or pale architecture loses neutrality | Rebuild local white/near-neutral colour first, then add limited source-owned sky, ground, or practical-light reflection on reachable planes |
+| Skin is orange, pale, green, or separately graded | Restore source-informed skin local colour and facial value relationships; use the shared scene light without a person-only beauty cast |
+| Palette is intense or dirty | Reduce the chroma or area of support/context owners, restore one neutral bridge, and weaken the final grade; do not suppress protected focal colour |
+| Palette is flat after removing warmth | Strengthen owned value, chroma, hue-boundary, edge, or area contrast locally; do not reintroduce a whole-frame cast |

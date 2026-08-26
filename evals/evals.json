@@ -1,6 +1,6 @@
 {
-  "skill": "impasto-frame-skill",
-  "purpose": "Effect and regression cases for authored painterly composition, hard-locked human geometry with finished-frame style integration, explicit three-tier contrast budgets, salient-prop reconstruction, layered colour and subject light, plus restrained relationship-driven tactile depth.",
+  "skill": "impasto-frame",
+  "purpose": "Effect and regression cases for authored painterly composition, identity-preserving focal beauty, salient-prop reconstruction, layered colour and subject light, plus restrained relationship-driven tactile depth.",
   "cases": [
     {
       "id": "portrait-strong-stylization-not-filter",
@@ -102,8 +102,7 @@
       "expected_behavior": [
         "Separate the person's visible identity signature and the prop's semantic anchors from authored design anchors.",
         "Choose one structural primary macro departure with an aesthetic payoff and one supporting move visible at 128–256 px.",
-        "Hard-lock facial landmarks, expression, gaze, head-neck attachment, body proportions, pose, limbs, hands, feet, clothing silhouette and contacts; improve beauty only through light, colour, paint grouping and controlled edges inside that geometry.",
-        "Use the same light field, colour logic, abstraction family, edge hierarchy, material world, contact treatment and final grade across person and environment.",
+        "Preserve identity and expression direction while rebuilding connected facial planes, head/neck attachment, controlled eye/mouth edges and flattering motivated light without generic beautification.",
         "Preserve prop category, owner/contact, dominant colour and motif family while redesigning silhouette rhythm, panels, repeat grouping, material, highlights and overlap.",
         "Separate local colour, primary illumination, limited environment influence and a restrained final grade."
       ]
@@ -114,8 +113,8 @@
       "input_contract": "One generated remake with identity retention but degraded facial aesthetics and literal prop tracing.",
       "expected_route": "Finished-frame review with Aesthetic Direction",
       "expected_behavior": [
-        "Fail human-geometry and prop-reconstruction gates even if likeness and texture are acceptable.",
-        "Restore the exact source landmarks, expression, head-neck geometry and body relationships; correct only paint/light/edge artifacts inside the lock.",
+        "Fail identity-plus-beauty and prop-reconstruction gates even if likeness and texture are acceptable.",
+        "Preserve the identity signature and rebuild only facial connections, expression planes, edge hierarchy and subject light.",
         "Preserve prop semantics and essential motif while redesigning panels, repeat rhythm, highlights, material and overlap rather than adding more texture.",
         "Keep successful composition and colour modules unchanged during the targeted correction."
       ]
@@ -133,38 +132,39 @@
       ]
     },
     {
-      "id": "human-locked-environment-restage",
-      "request": "把这张人物在田野里的照片重做成更有作者性的绘画画面。人物本人、表情、姿势、四肢、手脚、衣服轮廓以及人与地面和伞的接触全部不能变；但你可以扩大天空或田野、改变地平线和环境形状，并让主体与背景更有层次。",
-      "input_contract": "One environmental portrait with a fully visible person and editable surrounding landscape.",
-      "expected_route": "Edit Target with Human Preservation",
+      "id": "cool-snow-source-without-warm-drift",
+      "request": "把这张蓝调雪景做成自然的油画动画画面。构图和山雪关系可以重新导演，但不要自动变成暖色，也不要把雪、天空和衣服都染成同一种蓝。",
+      "input_contract": "One cool or blue-hour winter source with snow, sky, neutral materials and possibly a small practical light.",
+      "expected_route": "Edit Target with source-led colour control",
       "expected_behavior": [
-        "Record the full human hard lock before any directorial change and keep the person as one undistorted unit.",
-        "Choose one thumbnail-visible primary change from crop, area, environment scale, negative space, depth, light shape or color-zone restaging, plus one supporting move; never use local human anatomy or pose as the change.",
-        "Fill explicit Tier 1/Tier 2/Tier 3 relationships for local contrast, microcontrast, edge density, chroma, hue noise and texture frequency.",
-        "Integrate the locked person through the same light, colour, edge, plane, material, contact and grade system as the environment.",
-        "Inspect facial landmarks, body proportions, every limb/joint, hands, feet, clothing silhouette and contacts after generation; make one targeted restoration if any drift occurs."
+        "Choose Preserve source bias or Source-neutral from reliable snow, cloud, clothing and practical-light evidence.",
+        "Keep any warm practical light local to its owner and reachable planes instead of spreading it through the final grade.",
+        "Preserve distinct snow, sky, fabric, skin and architecture local-colour families inside the cool scene.",
+        "Fail an amber whole-frame shift, universal blue shadows across all materials, or global saturation used to create mood."
       ]
     },
     {
-      "id": "review-attractive-background-human-drift",
-      "request": "检查这张结果：背景构图和色彩比原图更好，但人物脸型、眼睛位置、手指、膝盖角度和鞋子方向都有变化。整体很漂亮，能算合格吗？",
-      "input_contract": "One generated remake with successful environment direction but multiple human-geometry changes.",
-      "expected_route": "Finished-frame review with Human Preservation",
+      "id": "daylight-portrait-no-beauty-warm-cast",
+      "request": "把这张人物与绿植的日光照片转成绘画画面，人物要自然好看，色彩参考原图并重新平衡主次，但不要让肤色偏橙、草地偏黄或天空偏青。",
+      "input_contract": "One daylight environmental portrait with skin, vegetation, sky and pale wardrobe or another neutral anchor.",
+      "expected_route": "Edit Target with Aesthetic Direction and source-led colour control",
       "expected_behavior": [
-        "Fail immediately; an attractive background cannot compensate for facial, limb, hand, joint or foot drift.",
-        "Preserve successful environment, composition, colour and material modules while restoring only the exact source-visible human geometry and contacts.",
-        "Reinspect the corrected result at mid and close scale and do not call it a pass if any human drift remains."
+        "Treat flattering facial presentation as plane, edge and motivated-light control rather than a warm beauty grade.",
+        "Record reliable source neutrals and use Source-neutral unless a visible source bias justifies preservation.",
+        "Assign skin, vegetation, sky, wardrobe and prop separate local-colour owners with one source-relative chroma budget.",
+        "Fail orange skin, yellow-green contamination, universal cool shadows, or a final grade that moves all major owners together."
       ]
     },
     {
-      "id": "review-pasted-person-style-separation",
-      "request": "检查这张结果：人物五官和姿势都没变，但人物仍像原照片，边缘很硬，光线和颜色也与重新绘制的背景不一致，像贴上去的一样。",
-      "input_contract": "One generated remake with correct human geometry but a photographic or pasted person inside a painterly environment.",
-      "expected_route": "Finished-frame review with Human Preservation",
+      "id": "cross-model-source-temperature-contract",
+      "request": "用不同图片模型做同一张图。允许具体笔触不同，但原图冷暖关系、白色物体、肤色、主色面积和焦点色的层级要一致。",
+      "input_contract": "One supplied image evaluated across multiple image models with the same Source Card.",
+      "expected_route": "Cross-model comparison",
       "expected_behavior": [
-        "Fail the human style-integration gate even though geometry is preserved.",
-        "Keep all human geometry fixed and correct only light/shadow grouping, paint abstraction, edge hierarchy, material handling, contact integration and final grade.",
-        "Require person and environment to share one visual system without using a separate mask-like person grade or changing anatomy."
+        "Use one shared temperature policy, reliable-neutral evidence, protected local colours, chroma budget and role-ownership map for every model.",
+        "Permit exact hue and brush-stamp variance only inside the same owners and dominance hierarchy.",
+        "Report temperature/neutral drift separately from brush residue, geometry drift and colour-role drift.",
+        "Do not average away one model's automatic warm or teal cast when the other outputs pass."
       ]
     }
   ]

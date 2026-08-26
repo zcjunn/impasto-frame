@@ -1,4 +1,4 @@
 interface:
-  display_name: "Impasto Frame Skill"
-  short_description: "Directed painterly frames with human fidelity"
-  default_prompt: "Use $impasto-frame-skill to rebuild the supplied image as one coherent authored painterly frame. Choose one thumbnail-visible primary directorial change plus one supporting move; hard-lock all visible human facial/body geometry, pose, limbs, hands, feet, clothing silhouette and contacts while integrating the person through the same light, colour, edge, plane, material and grade system as the environment. Fill the focal/support/context budget for local contrast, microcontrast, edge density, chroma, hue noise and texture frequency; use scene-owned chromatic gray rather than gray fog; choose colour collision as None, Preserve existing, or Author new with explicit owners, boundary, dominance and function; keep tactile paint depth restrained and relationship-driven, never mosaic relief."
+  display_name: "Impasto Frame"
+  short_description: "Natural painterly frames with source-led colour"
+  default_prompt: "Use $impasto-frame to rebuild the supplied image as a naturally authored painterly frame with a thumbnail-visible directorial change, identity-preserving focal beauty, redesigned salient props, source-led colour and motivated subject light. Preserve the source temperature unless a named light or spatial owner justifies a shift; avoid automatic warm grading, dirty saturation and mosaic relief."

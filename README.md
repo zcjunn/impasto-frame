@@ -1,55 +1,54 @@
-# Impasto Frame Skill
+# Impasto Frame
 
-`Impasto Frame Skill` 将照片或文字场景转译成具有作者性构图、场景化色彩、主体照度和轻度油画立体质感的原创绘画动画画面。
+`Impasto Frame` 将照片或文字场景转译为具有作者性构图、自然人物表现、场景化色彩和轻度油画触感的原创绘画画面。
 
-它的重点不是给原图套一层纹理，而是先提出一个缩略图可见的“主导演变化”，再用一个辅助变化强化：可以重排面积、裁切、负空间、前景遮挡、透视、光形或色域，也可以放大一个环境主体。随后重建大形、前后关系、光色层次和主体美感，最后只在说明空间关系的位置加入轻度厚薄笔触。天空、水面、皮肤和雾气等连续区域保持统一，不做全画面马赛克、拼贴或浮雕化处理。
+它先重新组织大形、前后关系、主体照明和色彩层级，再把有限的立体笔触放在真正能够说明空间的位置，例如遮挡、接触、折痕、形体转折和前景分离。天空、水面、皮肤、雾气等连续区域保持连贯，不会被全画面马赛克、拼贴色块或厚重浮雕破坏。
 
-人物照片采用“双重硬门槛”：五官、表情、视线、头颈、身材比例、姿态、肢体、手脚、服装轮廓以及人与道具/地面的接触关系都要保留；同时人物必须和新环境共享同一套光线、色彩、边缘、笔触与材质系统，不能成为贴在绘画背景上的照片剪影。
+## 色彩特点
+
+- 先分析原图的中性色、白平衡、主色面积、局部色和光源，再决定是否调色。
+- 默认尊重原图的冷暖倾向，不自动套用暖色、青橙或互补色模板。
+- 可选择保留并优化、重新平衡或重新设计色域，但每次变化都必须有明确的空间、材质、光源或叙事所有者。
+- 将局部色、主体照明、环境反射和最终调色分开，避免肤色偏橙、绿植偏黄、雪景发暖或整张图被单一色罩污染。
+- 背景使用带色灰和低色噪组织空间，不用灰雾、全局去饱和或抬黑来制造“电影感”。
 
 ## 适合用来做什么
 
-- 将人物、风景、建筑、雪景和海景转成原创绘画动画关键帧。
-- 在保留身份、动作、主体关系和关键色彩的前提下，重新组织构图、光形和色域。
-- 以主体、支撑层和背景三层预算控制局部对比、微对比、边缘密度、色度、色相噪声与纹理频率。
-- 用带有场景色相的彩灰安静背景，同时保留空间、材质和照明，避免灰雾、全局去饱和或抬黑。
-- 按“无 / 保留原有 / 主动建立”决定是否需要色彩对撞；主动建立时明确颜色所有者、交界位置、面积主次和视觉功能。
-- 为显著道具重新设计轮廓、折面、材质和图案节奏，避免逐像素复刻。
-- 用轻度关系导向的油画笔触增强前景、接触、遮挡、折痕和材质转折。
+- 将人物、风景、建筑、雪景、海景和城市照片转成原创绘画画面。
+- 保留人物身份、动作和关键关系，同时主动调整裁切、主体尺度、负空间、光形与色域。
+- 为伞、服装、建筑、机械等显著主体重新设计轮廓、折面、材质和图案节奏，避免逐像素复刻。
+- 用轻度、关系导向的油画笔触增强前后层次，而不是把整张画面拼成厚颜料块。
 
 ## 使用方法
 
-把图片上传后直接描述：
+上传图片后可以直接说：
 
 ```text
-使用 $impasto-frame-skill。
-保留：{人物/动作/地标/关键关系}
-人物硬保真：五官、表情、视线、身材比例、姿态、肢体、手脚、服装轮廓与接触关系不变
-主导演变化：{尺度接管/面积重排/裁切重构/前景遮挡/负空间扩张/透视压缩/光形重建/色域重排}
-辅助变化：{强化主变化的第二个动作}
-三层对比预算：{主体/支撑/背景的局部对比、微对比、边缘、色度、色相噪声、纹理频率}
-色彩：{保留原色 / 重新平衡 / 重新脚本}
-色彩对撞：{无 / 保留原有 / 主动建立：所有者、交界、面积主次、功能}
-避免：人物几何变化、人物与环境风格分离、灰雾、全局滤镜、马赛克笔触、厚重浮雕、复制原图道具
+使用 $impasto-frame。
+保留：{人物身份、动作、关键地标或主体关系}
+希望强化：{构图、主体照明、前后关系或绘画质感}
+色彩：{参考原图 / 保留并优化 / 重新平衡 / 重新设计色域}
+避免：自动暖色调、全局滤镜、马赛克笔触、拼贴色块、厚重浮雕、道具照抄
 ```
 
-显式调用：`$impasto-frame-skill`
+如果没有指定色彩方向，Skill 会优先参考原图的白平衡、冷暖倾向和受保护的局部色，再做必要的层级优化。
+
+显式调用：`$impasto-frame`
 
 ## English
 
-`Impasto Frame Skill` turns a photo or text scene into an original painterly animation frame with authored composition, scene-owned colour, motivated subject light and restrained tactile oil-paint depth.
+`Impasto Frame` transforms a photo or text scene into an original painterly frame with authored composition, natural focal treatment, source-led colour and restrained tactile oil-paint depth.
 
-It begins with one thumbnail-visible primary directorial change and one supporting move, then rebuilds large shapes, spatial relationships, a three-tier contrast budget, colour hierarchy and focal beauty. Local paint thickness is reserved for overlaps, contacts, folds, crests, edges and material changes; continuous sky, water, skin and haze stay coherent rather than becoming a tiled relief surface.
+It analyses source neutrals, white balance, colour ownership and motivated light before grading. The source temperature remains the default; warm/cool opposition, complementary colour and stronger chroma are used only when a named light, material, spatial region or narrative function justifies them. Local colour, illumination, environment influence and final grade stay separate, preventing automatic amber skin, yellow-green vegetation, warmed snow or one global cast.
 
-For human edit targets, facial and body geometry, expression, pose, limbs, hands, feet, clothing silhouette and contacts are hard-locked. The protected person must nevertheless share the environment's light, colour, edge, abstraction, material and grading system; neither geometry drift nor a pasted photographic person passes.
+Use it for a strongly stylized painted result with visible shape and composition authorship—not a global texture filter, literal prop trace, dirty colour wash, mosaic surface or all-over heavy impasto.
 
-Use it when you want a strongly stylized painterly frame with controlled composition and material depth—not a global texture filter, literal prop tracing or all-over heavy impasto.
-
-## 安装
+## Install
 
 ```bash
-git clone https://github.com/zcjunn/impasto-frame-skill.git ~/.codex/skills/impasto-frame-skill
+git clone https://github.com/zcjunn/impasto-frame.git ~/.codex/skills/impasto-frame
 ```
 
-## 许可证
+## License
 
-本项目采用 [个人非商业许可证](LICENSE)。仅限个人、非商业使用；商业使用须事先获得 zcjun 的明确书面许可。
+This project uses the [Personal Non-Commercial License](LICENSE). Personal, non-commercial use only. Commercial use requires prior explicit written permission from zcjun.

@@ -23,8 +23,8 @@ Fidelity:
 Transformation mode:
 
 - **Identity-first:** preserve recognizable face/body/object geometry closely; redesign color, light, edges, and surfaces. Use when exact likeness or product/architecture recognition dominates.
-- **Balanced:** preserve signature identity, count, pose, and structural relationships; allow controlled crop, painterly light/plane grouping inside protected geometry, merged detail, and environment reshaping.
-- **Style-first:** preserve the semantic minimum and recognizable anchors; deliberately reconstruct transformable object/environment proportions, contours, planes, materials, and nonessential layout. A visible human Edit Target remains subject to the full hard lock in `human-preservation.md`; Style-first never grants permission to change face/body geometry, pose, limbs, hands, feet, clothing silhouette, or contacts.
+- **Balanced:** preserve signature identity, count, pose, and structural relationships; allow controlled crop, planar facial stylization, silhouette cleanup, merged detail, and environment reshaping.
+- **Style-first:** preserve the semantic minimum and recognizable anchors; deliberately reconstruct proportions, contours, planes, materials, and nonessential layout. Use when the user prioritizes a stronger painterly-animation result and permits departure from 1:1 realism.
 
 Scene emphasis:
 
@@ -56,6 +56,14 @@ Color-authorship mode:
 
 Choose after the color audit in `color-authorship.md`. Do not infer Re-script from Style-first, or warm-cool contrast from any mode.
 
+Temperature policy:
+
+- **Source-neutral:** derive a believable neutral axis from reliable source materials and do not impose a new cast.
+- **Preserve source bias:** retain a source-owned cool, warm, green, violet, dusk, night, snow, underwater, or mixed-light character.
+- **Motivated shift:** change temperature only through a named light, atmosphere, material adjacency, spatial zone, or narrative transition with an explicit boundary.
+
+For supplied images, default to Source-neutral or Preserve source bias. Do not infer a warm grade from portrait beauty, painterly style, subject illumination, or the word “cinematic.”
+
 ## Build a Source Card
 
 Record compactly:
@@ -73,17 +81,12 @@ scene_emphasis: Character/Object / Environment / Relationship
 abstraction_strength: Restrained / Expressive / Radical
 exposure_key: High-key / Mid-key / Low-key
 color_authorship_mode: Preserve-and-refine / Rebalance / Re-script
+temperature_policy: Source-neutral / Preserve source bias / Motivated shift
 distribution_policy: Preserve protected layout / Selectively restage / Major restage
 observed:
   core_subjects: 1-2 identity-defining subjects
   supporting_facts: 2-4 scene facts
   identity_invariants: face, body, product, architecture, markings, wardrobe color
-  human_lock_when_present:
-    face: landmarks, ratios, gaze, expression, asymmetries, head-neck attachment
-    body: proportions, torso/shoulder/hip relation, center of gravity
-    limbs: count, length, joint positions and angles, hands, fingers, feet, shoe direction
-    contacts: person-prop, person-ground, overlap and occlusion relationships
-    clothing: category, silhouette, openings, protected patterns and colors
   focal_identity_signature: visible head/jaw, eyes/brows, nose-mouth-chin, expression, hair silhouette, object geometry, species traits, or other recognition relationships
   salient_prop_semantics: category, owner/contact, functional state, dominant colour, and only the motif/geometry cues necessary for recognition
   spatial_invariants: only declared count, left-right order, gesture, gaze, horizon, overlap, or scale relationships that must remain
@@ -92,8 +95,10 @@ observed:
   color_audit:
     value_groups: large light/mid/dark ownership independent of hue
     hue_families: dominant, secondary, neutrals
+    reliable_neutral_evidence: source whites, grays, snow, cloud, concrete, metal, fabric, or other known local colour; note clipping and coloured light
     temperature_map: spatial warm/cool distribution without assuming opposition
     saturation_map: muted, concentrated, clipped, or competing regions
+    source_saturation_baseline: broad relationship between quiet, dominant, support, and peak-chroma regions
     spatial_material_ownership: subject, foreground, background, atmosphere, important materials
     protected_color_anchors: identity, wardrobe, product, brand, species, architecture, text
     light_shadow_reflection: source color, shadow color, reflected color, atmospheric shift
@@ -109,16 +114,11 @@ semantic_minimum: facts required for recognition
 recognition_anchors: identity, count, pose, signature silhouette, spatial relationship, color anchors
 design_anchors:
   composition_authorship: crop, focal scale, headroom, negative space, overlap pressure, viewing path, and intended improvement
-  focal_aesthetic_plan: for humans, light/paint planes and edge treatment inside locked landmarks, expression and silhouette; for non-humans, identity-preserving object planes and silhouette cleanup
+  focal_aesthetic_plan: identity-preserving face/object planes, expression treatment, silhouette cleanup, and protected asymmetries
   prop_reconstruction: silhouette rhythm, internal planes, motif grouping, material response, and overlap to redesign rather than trace
   subject_illumination: key direction, revealed planes, shadow-side separation, optional bounce, supportive background field, and focal accents
   grading_policy: successful source relationships to retain, relationships to rebalance, and limits on final grade
-  human_style_integration_when_present:
-    shared_light_field: key direction, shadow family, bounce and contact integration
-    shared_color_logic: protected skin/wardrobe local colour plus common scene illumination and restrained grade
-    shared_abstraction_family: paint/plane simplification inside locked geometry consistent with environment simplification
-    shared_edge_material_world: focal edge priority, material-specific marks, no photographic cutout boundary
-transformable_elements: any user-authorized crop, uniform whole-person apparent scale, non-human object/environment proportions, surface construction, repeated detail, secondary props, ornament, texture, or atmosphere; never local human geometry
+transformable_elements: any user-authorized crop, minor proportions, surface construction, repeated detail, secondary props, ornament, texture, or atmosphere
 directorial_transform_proposal:
   dramatic_proposition: actor + visible pressure/counterforce + intended first read
   primary_macro_departure: one scale/area/crop/occlusion/perspective/negative-space/light/color-zone/subjective-graphic change
@@ -127,18 +127,20 @@ directorial_transform_proposal:
   protected_invariants: what this proposal may not alter
   incidental_distribution_not_preserved: headroom, exact crop/horizon, repeated assets, secondary detail, or local contrast when allowed
 contrast_ownership:
-  local_value_contrast: explicit Tier 1 / Tier 2 / Tier 3 relationship
-  microcontrast: explicit Tier 1 / Tier 2 / Tier 3 relationship
-  edge_density: explicit Tier 1 / Tier 2 / Tier 3 relationship
-  chroma: explicit Tier 1 / Tier 2 / Tier 3 relationship
-  hue_noise: explicit Tier 1 / Tier 2 / Tier 3 relationship
-  texture_frequency: explicit Tier 1 / Tier 2 / Tier 3 relationship
+  tier_1_focal: owner plus selected peak value/edge/chroma/hue-boundary/texture/FX dimensions
+  tier_2_support: structural owner plus medium cues retained for depth and relation
+  tier_3_context: scene-owned chromatic-gray/colored field and dimensions compressed without losing depth/material
 color_collision_decision:
   mode: None / Preserve existing / Author new
   owners_and_adjacency: who meets where
   dominance_and_function: which side owns area and why the collision exists
 thumbnail_difference_target: one major mass/area/contour/overlap/focal-scale/light-topology/color-zone difference visible at 128–256 px
 color_plan:
+  temperature_policy:
+    mode: Source-neutral / Preserve source bias / Motivated shift
+    evidence: reliable source neutral, source cast, light, atmosphere, material, or narrative owner
+    owned_shift_and_boundary: named owner, reachable region, direction, area dominance, and stopping point
+    protected_neutrals: whites, grays, skin, snow, cloud, cloth, metal, or other local-colour anchors that may not receive a global cast
   primary_contrast: value / analogous / complementary / split-complementary / warm-cool / saturation / hue-boundary / near-monochrome rupture / local-color versus illumination
   subordinate_contrast: optional; do not maximize every axis
   dominant_field: spatial owner, hue family, value, chroma
@@ -147,11 +149,12 @@ color_plan:
   connector_echo: optional quiet recurrence
   neutral_bridge: low-chroma family preventing equal competition
   protected_anchors: colors that must remain recognizable
+  chroma_budget: which owner is dominant, which owns peak chroma, which support/context regions stay quieter, and how this relates to the source baseline
   layered_colour:
     local_colour: source-informed material and identity families
     primary_illumination: motivated source, direction, colour influence, and affected planes
     environment_influence: limited reflected colour, bounce, atmosphere, and adjacency effects
-    final_grade: restrained unifying shift that cannot overwrite local colour, material separation, or focal ownership
+    final_grade: restrained unifying shift that cannot overwrite source temperature policy, protected neutrals, local colour, material separation, or focal ownership
 environment_design:
   hero_form: primary landform, structure, void, weather mass, or light shape
   counterform_current: opposing or guiding source-owned mass/direction
@@ -162,7 +165,7 @@ environment_design:
   optional_additional_axes: only changes that remain visibly useful; axis count alone is not success
   repeated_detail_policy: which trees, rocks, windows, waves, foliage, rubble, or reflections become grouped rhythms
 shape_rebuild:
-  subject_planes: for humans, 4-7 light/paint groups inside locked landmarks and silhouette; for non-human objects, authored silhouette and meaningful planes
+  subject_planes: silhouette and 4-7 meaningful face/object planes
   environment_masses: broad graphic forms replacing repeated detail
   material_grammars: distinct marks for 3-5 important materials
 light_depth_policy:
@@ -170,7 +173,7 @@ light_depth_policy:
   quiet_fields: continuous, distant or identity-critical passages that stay broad and low-relief
   surface_response: optional narrow subordinate ridge catches; never global shine or colour replacement
 allowed_changes: user-authorized changes
-hard_avoids: identity drift, facial/body/limb/hand/foot/pose/contact drift, pasted-person style separation, added objects, sample residue, text errors
+hard_avoids: identity drift, added objects, sample residue, text errors
 ```
 
 Do not invent unseen facial features, object backs, hidden text, location, date, or story as observed fact.
@@ -178,19 +181,19 @@ Do not invent unseen facial features, object backs, hidden text, location, date,
 ## Translate the Source
 
 1. Keep the semantic minimum and recognition anchors; do not automatically preserve every visible detail.
-2. Read `human-preservation.md` whenever a visible person exists. Record and preserve exact facial/body geometry, pose, limbs, hands, feet, clothing silhouette and contacts; plan one shared painterly light/colour/edge/material treatment so the protected person is integrated rather than pasted. Read `aesthetic-direction.md` for other recognition-critical objects/props and for non-geometric presentation choices. For a face, improve only light/shadow grouping, paint planes and edge control inside the locked landmarks; for a salient prop, preserve semantics and essential motifs while redesigning incidental panels, repeat rhythm, folds, highlights, and contour accidents.
+2. Read `aesthetic-direction.md` when a recognition-critical person, object, or prop exists. Separate preserved recognition anchors from authored design anchors. For a face, retain its visible identity signature while improving connected planes, expression edges, head/neck attachment, and light; for a salient prop, preserve semantics and essential motifs while redesigning incidental panels, repeat rhythm, folds, highlights, and contour accidents.
 3. Apply the chosen transformation mode. In Balanced or Style-first work, simplify or redesign transformable elements instead of tracing them literally.
 4. Rebuild the focal silhouette, internal planes, and major surrounding masses before adding brush marks. Apply the same logic to people, creatures, products, buildings, machines, and environments.
-5. Read `directorial-contrast.md`. For Expressive/Radical work, require a dramatic proposition, one primary macro departure, one supporting move, and a thumbnail difference target. Fidelity protects declared recognition anchors; it does not silently preserve every area ratio, crop, horizon, or incidental distribution. With a visible person, direct the change around the locked human geometry through crop, uniform whole-person scale, environment form, negative space, depth, light shape or color-zone restaging. State why it improves the finished image.
+5. Read `directorial-contrast.md`. For Expressive/Radical work, require a dramatic proposition, one primary macro departure, one supporting move, and a thumbnail difference target. Fidelity protects declared recognition anchors; it does not silently preserve every area ratio, crop, horizon, or incidental distribution. State why the chosen crop, focal scale, negative space, overlap or viewing path improves the finished image.
 6. For environment-emphasis, read `environment-abstraction.md`. Select a hero form, a counterform/current, and a visible verb. Make the primary departure change their scale, area, contour, overlap, negative-space, light-shape, perspective, or color-zone relationship rather than merely changing palette and brush texture.
 7. Merge repeated micro-detail into larger shapes and assign each important material a distinct mark grammar derived from its behavior. Exact distributions of incidental trees, rocks, windows, waves, leaves, snow clumps, rubble, and reflections are not invariants unless declared.
 8. Choose one focal event and one composition family from `style-system.md`; restage or crop only when permitted.
-9. Fill all six focal/support/context contrast-budget rows: local contrast, microcontrast, edge density, chroma, hue noise and texture frequency. Lower only the selected context dimensions; retain broad depth, material identity, motivated colour, and protected human geometry.
-10. Read `color-authorship.md`. Audit what already works, choose Preserve-and-refine, Rebalance, or Re-script, then assign one primary contrast axis, an optional subordinate axis, spatially owned color roles, and an explicit None/Preserve/Author color-collision decision. Separate local colour, primary illumination, environment influence and final grade. Keep source-derived color anchors when recognition depends on them; never add warm-cool, complementary contrast, or global saturation by reflex.
+9. Assign focal/support/context contrast tiers. Lower context local contrast, microcontrast, edge density, hue noise, and texture frequency selectively; retain broad depth, material identity, motivated colour, and any protected subject geometry.
+10. Read `color-authorship.md`. Audit what already works, choose Preserve-and-refine, Rebalance, or Re-script, and independently choose Source-neutral, Preserve source bias, or Motivated shift. Record reliable neutral evidence, source saturation baseline, protected neutrals/local colours, named temperature owners and boundaries, then assign one primary contrast axis, an optional subordinate axis, spatially owned color roles, and an explicit None/Preserve/Author color-collision decision. Separate local colour, primary illumination, environment influence and final grade. Keep source-derived color anchors when recognition depends on them; never add warm-cool, complementary contrast, a beauty-warm grade, or global saturation by reflex.
 11. If light tactile depth is requested, read `light-depth-brushwork.md`. Name only the relationships that benefit from mild body and the continuous/distant/identity-critical fields that must remain low-relief. Do not use surface height to construct the whole image.
 12. Change only what the user allowed.
 
-For Edit Target, write prompt clauses as `Preserve anchors Y; reconstruct elements X`. With a visible person, add `Hard-lock human geometry H; integrate through shared style S`. Do not imply that “stylize” grants permission to change identity, count, human geometry, protected geometry, or required text, but do not promote incidental photographic environment detail to an invariant either.
+For Edit Target, write prompt clauses as `Preserve anchors Y; reconstruct elements X`. Do not imply that “stylize” grants permission to change identity, count, protected geometry, or required text, but do not promote incidental photographic detail to an invariant either.
 
 ## Analyze Style References
 
