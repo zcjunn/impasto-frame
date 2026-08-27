@@ -4,6 +4,10 @@
 
 它先重新组织大形、前后关系、主体照明和色彩层级，再把有限的立体笔触放在真正能够说明空间的位置，例如遮挡、接触、折痕、形体转折和前景分离。天空、水面、皮肤、雾气等连续区域保持连贯，不会被全画面马赛克、拼贴色块或厚重浮雕破坏。
 
+## 模型建议
+
+如果运行环境支持模型选择，推荐使用 **gpt-5.6 Luna**，推理强度设为 **极高**。更强的模型通常更能稳定执行构图重排、源图色彩分析、人物/主体保真和材质分层；模型本身的理解与生成能力会直接影响最终画面的风格一致性、细节完整度和局部准确性。该建议不是硬性依赖，任何模型生成后都应按 Skill 的质量检查进行复核。
+
 ## 色彩特点
 
 - 先分析原图的中性色、白平衡、主色面积、局部色和光源，再决定是否调色。
@@ -42,6 +46,10 @@
 It analyses source neutrals, white balance, colour ownership and motivated light before grading. The source temperature remains the default; warm/cool opposition, complementary colour and stronger chroma are used only when a named light, material, spatial region or narrative function justifies them. Local colour, illumination, environment influence and final grade stay separate, preventing automatic amber skin, yellow-green vegetation, warmed snow or one global cast.
 
 Use it for a strongly stylized painted result with visible shape and composition authorship—not a global texture filter, literal prop trace, dirty colour wash, mosaic surface or all-over heavy impasto.
+
+### Model recommendation
+
+When model selection is available, prefer **gpt-5.6 Luna** with reasoning effort set to **Extreme**. A stronger model is more likely to carry out the composition restaging, source-led colour analysis, identity/subject fidelity and material separation consistently. Model capability directly affects style consistency, detail completeness and local accuracy in the final image. This is a recommendation rather than a hard dependency; every output should still pass the Skill's quality checks.
 
 ## Install
 

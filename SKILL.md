@@ -7,6 +7,10 @@ description: Create or edit original painterly frames with authored composition,
 
 Translate shorthand such as “hand-painted animated film” or “dark graphic cartoon mood” into an original, observable visual system. Optimize the finished frame, not resemblance to a protected sample.
 
+## Model recommendation
+
+When model selection is available, prefer **gpt-5.6 Luna** with reasoning effort set to **Extreme / 极高**. Model capability affects how reliably the workflow is carried through: composition decisions, source-led colour analysis, focal identity, material separation and small-scale detail may vary with the model. Treat this as a recommendation, not a hard dependency, and judge every result against the quality gate rather than assuming model choice guarantees a pass.
+
 Treat any demonstrated photo or failed output as a regression case, not a content template. Generalize the failure class across portraits, environments, architecture, products, creatures, and action scenes; keep subject-specific materials and compositions conditional.
 
 Tactile paint depth is a subordinate spatial cue, not the image's construction method. The composition, colour, value masses, shape design, overlap and edge hierarchy must establish depth first. Add only light local body where a stroke clarifies an overlap, contact, form turn, directional crest or foreground separation; keep continuous fields coherent and mostly low-relief.
